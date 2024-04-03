@@ -20,7 +20,7 @@ const Header = () => {
               <Link href="" pr='15px' _hover={{textDecoration:'none'}}>Pricing</Link>
             </Box>
             <Box>
-              <Link href=""><Button variant='outline'>Sign In</Button></Link>
+              <Link href="/auth"><Button variant='outline'>Sign In</Button></Link>
             </Box>
           </Box>
         </Box>
