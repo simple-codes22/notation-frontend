@@ -1,8 +1,12 @@
-import React from 'react'
+'use client';
+import { Box } from '@chakra-ui/react'
+import React from 'react';
 
 const Page = () => {
   return (
-    <div>Page</div>
+    <Box>
+      Auth
+    </Box>
   )
 }
 
