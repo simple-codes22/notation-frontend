@@ -3,13 +3,13 @@ import { Box, Button, Flex } from '@chakra-ui/react';
 import { Link } from '@chakra-ui/next-js';
 import Image from 'next/image';
 import React from 'react';
-import Logo from  '@/assets/Images/Favicon-dark.svg';
+import Logo from  '@/assets/Images/PNG/Logo.png';
 
 const Header = () => {
   return (
     <Flex py='20px' width='100%' justify='center' align='center'>
         <Box px='20px' width='100%' maxWidth='1280px' display='flex' alignItems='center' justifyContent='space-between'>
-          <Box width='70px'>
+          <Box width='150px'>
             <Image src={Logo}  alt="Notation" />
           </Box>
 
