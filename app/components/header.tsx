@@ -19,6 +19,8 @@ const Header = () => {
               <Link href="" pr='15px' _hover={{textDecoration:'none'}}>About Us</Link>
               <Link href="" pr='15px' _hover={{textDecoration:'none'}}>Pricing</Link>
             </Box>
+          </Box>
+          <Box display={{base: 'none', md:'flex'}} alignItems='center'>
             <Box>
               <Link href="/auth"><Button variant='outline'>Sign In</Button></Link>
             </Box>
