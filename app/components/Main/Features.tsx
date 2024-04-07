@@ -50,17 +50,27 @@ const Features = () => {
   return (
     <Flex width='100%' justify='center' >
         <Box as='section' width='100%' maxW='1280px'>
-            <Text fontSize='30px' fontWeight={700} textAlign='center' mt='50px'>Our Amazing Features</Text>
-        <Box>
+            <Text fontSize='50px' fontWeight={700} textAlign='center' mt='50px'>Our Amazing Features</Text>
+        <Box display='flex' flexDirection='column'>
             {mainFeatures.map((elem, index) => {
-                return (<Box key={index}>
-                    <Text>
+              if (index % 2 == 0) {
+                return (<Box key={index} width='60%' my='20px' p='40px'>
+                    <Text py='20px' fontSize='30px' fontWeight='700'>
                         {elem.title}
                     </Text>
-                    <Text>
+                    <Text py='20px' fontSize='20px' letterSpacing='1px'>
                         {elem.desc_}
                     </Text>
                 </Box>)
+              }
+                return (<Box key={index} width='60%' my='20px' p='40px' alignSelf='flex-end'>
+              <Text py='20px' fontSize='30px' fontWeight='700'>
+                  {elem.title}
+              </Text>
+              <Text py='20px' fontSize='20px' letterSpacing='1px'>
+                  {elem.desc_}
+              </Text>
+          </Box>)
             })}
         </Box>
         </Box>
