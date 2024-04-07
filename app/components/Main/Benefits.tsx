@@ -4,7 +4,7 @@ import React from 'react'
 
 const Benefits = () => {
   return (
-    <Flex width='100%' justify='center' align='center'>
+    <Flex as="section" width='100%' justify='center' align='center'>
       <Box width='100%' maxW='1280px'>
         Benefits
       </Box>
