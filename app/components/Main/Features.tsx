@@ -10,12 +10,12 @@ const Features = () => {
         "Engage in dynamic quizzes that make learning math enjoyable and effective. Our interactive platform offers a variety of question formats, ensuring an engaging experience for learners of all levels.",
     },
     {
-      title: "Customization Options:",
+      title: "Customization Options",
       desc_:
         "Tailor your quiz experience to suit your learning preferences. Choose from a range of topics and difficulty levels, allowing you to focus on specific areas or challenge yourself with comprehensive assessments.",
     },
     {
-      title: "Real-Time Feedback:",
+      title: "Real-Time Feedback",
       desc_:
         "Receive instant feedback on your quiz results, helping you identify strengths and areas for improvement. Our detailed analytics and insights empower you to track your progress and stay motivated on your math journey.",
     },
