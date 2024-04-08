@@ -3,14 +3,14 @@ import { Box, Flex } from '@chakra-ui/react'
 // import React from 'react'
 import Intro from './Intro';
 import Features from './Features';
-import HowItWorks from './How It works';
+import Track_ from './Track';
 
 const Main = () => {
   return (
     <Flex width='100%' justify='center' flexDirection='column'>
       <Intro />
       <Features />
-      <HowItWorks />
+      <Track_ />
     </Flex>
   )
 }
