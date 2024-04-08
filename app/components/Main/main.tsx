@@ -6,6 +6,7 @@ import Features from './Features';
 import Track_ from './Track';
 import Community from './Community';
 import Testimonial from './Testimonial';
+import GetStarted from './Get Started';
 
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
       <Track_ />
       <Community />
       <Testimonial />
+      <GetStarted />
     </Flex>
   )
 }
