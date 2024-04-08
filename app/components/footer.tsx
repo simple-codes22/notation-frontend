@@ -20,24 +20,21 @@ const Footer = () => {
 
           <Flex justify='space-between'>
             <Box mx='35px'>
-              <Text pb='10px'>Quick Links</Text>
+              <Text pb='10px' fontWeight='700' fontSize='20px'>For Educators</Text>
               <Box display='flex' flexDirection='column'>
-                <Link href='' my='3px' fontSize='14px'>Home</Link>
-                <Link href='' my='3px' fontSize='14px'>About</Link>
-                <Link href='' my='3px' fontSize='14px'>Features</Link>
-                <Link href='' my='3px' fontSize='14px'>Track</Link>
-                <Link href='' my='3px' fontSize='14px'>Community</Link>
-                <Link href='' my='3px' fontSize='14px'>Testimonial</Link>
+                <Link href='' my='3px' fontSize='14px'>Notation Learn</Link>
+                <Link href='' my='3px' fontSize='14px'>Create Tutorials</Link>
+                <Link href='' my='3px' fontSize='14px'>Become a Quiz Master</Link>
               </Box>
             </Box>
             <Box mx='35px'>
-              <Text pb='10px'>Resources</Text>
+              <Text pb='10px' fontWeight='700' fontSize='20px'>For Companies</Text>
               <Box display='flex' flexDirection='column'>
-                <Link href='' my='3px' fontSize='14px'>Blog</Link>
-                <Link href='' my='3px' fontSize='14px'>FAQ</Link>
+                <Link href='' my='3px' fontSize='14px'>Partnerships</Link>
+                {/* <Link href='' my='3px' fontSize='14px'>FAQ</Link>
                 <Link href='' my='3px' fontSize='14px'>Support</Link>
                 <Link href='' my='3px' fontSize='14px'>Privacy Policy</Link>
-                <Link href='' my='3px' fontSize='14px'>Terms of Service</Link>
+                <Link href='' my='3px' fontSize='14px'>Terms of Service</Link> */}
               </Box>
             </Box>
             {/* <Box mx='35px'>
