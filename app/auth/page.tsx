@@ -1,5 +1,5 @@
 'use client';
-import { Box, Flex } from '@chakra-ui/react'
+import { Box, Flex, Input, Text } from '@chakra-ui/react'
 import Image from 'next/image';
 import React from 'react';
 import Illustration from './../../assets/Images/Illustrations/Auth Illustration.jpg';
@@ -15,7 +15,14 @@ const Page = () => {
       }}>
       </Box>
       <Box width='50%' display='flex' justifyContent='center' alignItems='center'>
-        Page
+        <Box>
+          <Text>Sign Up</Text>
+          <Box>
+            <Input placeholder='email' />
+            <Input placeholder='username' />
+            <Input placeholder='password' />
+          </Box>
+        </Box>
       </Box>
     </Flex>
   )
