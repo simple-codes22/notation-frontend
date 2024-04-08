@@ -4,6 +4,7 @@ import { Box, Flex } from '@chakra-ui/react'
 import Intro from './Intro';
 import Features from './Features';
 import Track_ from './Track';
+import Community from './Community';
 
 const Main = () => {
   return (
@@ -11,6 +12,7 @@ const Main = () => {
       <Intro />
       <Features />
       <Track_ />
+      <Community />
     </Flex>
   )
 }
