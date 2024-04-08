@@ -5,6 +5,7 @@ import Intro from './Intro';
 import Features from './Features';
 import Track_ from './Track';
 import Community from './Community';
+import Testimonial from './Testimonial';
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
       <Features />
       <Track_ />
       <Community />
+      <Testimonial />
     </Flex>
   )
 }
