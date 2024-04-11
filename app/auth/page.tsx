@@ -3,7 +3,9 @@ import { Box, Flex, Input, Text, InputGroup, InputLeftElement, Button, Divider, 
 import Image from 'next/image';
 import React from 'react';
 import Illustration from './../../assets/Images/Illustrations/Auth Illustration.jpg';
-import { FaLock, FaUser } from 'react-icons/fa6';
+import { FaLock, FaUser, FaGithub, FaXTwitter } from 'react-icons/fa6';
+import { FcGoogle } from "react-icons/fc";
+import { Link } from '@chakra-ui/next-js';
 
 const Page = () => {
   // console.log(Illustration)
@@ -42,11 +44,17 @@ const Page = () => {
           <Button>Sign In</Button>
         </Box>
 
-        <Box position='relative' padding='10'>
-          <Divider />
-          <AbsoluteCenter px='4'>
-            Content
+        <Box position='relative' width='70%' padding='10'>
+          <Divider color='black' background='#000' />
+          <AbsoluteCenter background='white' px='4'>
+            Or
           </AbsoluteCenter>
+        </Box>
+
+        <Box display="flex" width='40%' justifyContent='space-evenly'>
+          <Link href=""><FcGoogle size='40px' /></Link>
+          <Link href=""><FaGithub size='40px' /></Link>
+          <Link href=""><FaXTwitter size='40px' /></Link>
         </Box>
       </Box>
     </Flex>
