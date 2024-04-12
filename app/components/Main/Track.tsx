@@ -7,10 +7,10 @@ const Track_ = () => {
     <Flex as="section" width='100%' justify='center' align='center'>
       <Box width='100%' maxW='1280px' display='flex' flexDirection='column'>
          <Box textAlign='center'>
-          <Text fontSize='50px' fontWeight={700} textAlign='center' mt='50px'>Track Your Progress</Text>
+          <Text fontSize='50px' fontWeight={700} textAlign='center' mt='100px' mb='50px'>Track Your Progress</Text>
          </Box>
          <Box>
-          <Text>Monitor your progress over time and visualize your improvement with our intuitive progress tracking tools. Stay informed about your performance and celebrate your achievements as you work towards mastering math concepts.</Text>
+          <Text fontSize='30px'>Monitor your progress over time and visualize your improvement with our intuitive progress tracking tools. Stay informed about your performance and celebrate your achievements as you work towards mastering math concepts.</Text>
          </Box>
       </Box>
     </Flex>

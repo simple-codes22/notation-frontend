@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Roboto_Mono, Titillium_Web,  } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./context/chakra-provider";
 
 const inter = Inter({ subsets: ["latin"] });
+const robotoMono = Roboto_Mono({subsets: ['latin']});
+// const titilliumWeb = Titillium_Web({subsets: ['latin']});
 
 export const metadata: Metadata = {
   title: "Notation",
@@ -27,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={robotoMono.className}>
         <Providers>
           {children}
         </Providers>
