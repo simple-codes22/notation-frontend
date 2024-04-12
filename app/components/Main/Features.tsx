@@ -6,31 +6,31 @@ const Features = () => {
   const mainFeatures = [
     [
       {
-        title: "Interactive Quizzes",
+        title: "🧠 Interactive Quizzes",
         desc_:
           "Engage in dynamic quizzes that make learning math enjoyable and effective. Our interactive platform offers a variety of question formats, ensuring an engaging experience for learners of all levels.",
       },
       {
-        title: "Customization Options",
+        title: "🔧 Customization Options",
         desc_:
           "Tailor your quiz experience to suit your learning preferences. Choose from a range of topics and difficulty levels, allowing you to focus on specific areas or challenge yourself with comprehensive assessments.",
       },
     ],
     [
       {
-        title: "Real-Time Feedback",
+        title: "🔄 Real-Time Feedback",
         desc_:
           "Receive instant feedback on your quiz results, helping you identify strengths and areas for improvement. Our detailed analytics and insights empower you to track your progress and stay motivated on your math journey.",
       },
     ],
     [
       {
-        title: "Comprehensive Question Bank",
+        title: "📚 Comprehensive Question Bank",
         desc_:
           "Explore a vast library of math topics, from basic arithmetic to advanced calculus. Our extensive question bank ensures that you have access to a wide range of exercises to enhance your skills and knowledge.",
       },
       {
-        title: "Accessible Anywhere, Anytime",
+        title: "🌐 Accessible Anywhere, Anytime",
         desc_:
         "Access our exam suite from any device with an internet connection, allowing you to study math whenever and wherever it's convenient for you. Whether you're at home, in school, or on the go, our platform is accessible 24/7.",
       },

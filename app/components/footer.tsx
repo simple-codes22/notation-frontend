@@ -48,8 +48,8 @@ const Footer = () => {
             </Box> */}
           </Flex>
         </Box>
-        <Box display='flex' justifyContent='space-between' pt='50px'>
-          <Box>
+        <Box display='flex' justifyContent='space-between' pt='100px'>
+          <Box fontSize='15px'>
             &copy; {(new Date()).getUTCFullYear()} Notation. All rights reserved.
           </Box>
           <Box display='flex'>
