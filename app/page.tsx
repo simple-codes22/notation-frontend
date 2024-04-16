@@ -4,7 +4,7 @@ import Header from "./components/header";
 
 export default function Home() {
   return (
-    <main>
+    <main style={{background:'#e8ecf0'}}>
       <Header />
       <Main />
       <Footer />

@@ -3,7 +3,7 @@ import { Box, Button, Flex } from '@chakra-ui/react';
 import { Link } from '@chakra-ui/next-js';
 import Image from 'next/image';
 import React from 'react';
-import Logo from  '@/assets/Images/PNG/Logo.png';
+import Logo from  '@/assets/Images/PNG/Notation normal tp.png';
 
 const Header = () => {
   return (
