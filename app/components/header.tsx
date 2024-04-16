@@ -22,7 +22,7 @@ const Header = () => {
           </Box>
           <Box display={{base: 'none', md:'flex'}} alignItems='center'>
             <Box>
-              <Link href="/auth"><Button variant='outline'>Sign In</Button></Link>
+              <Link href="/auth"><Button variant='outline' borderRadius='0'>Sign In</Button></Link>
             </Box>
           </Box>
         </Box>
