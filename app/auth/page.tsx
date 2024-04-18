@@ -20,8 +20,8 @@ const Page = () => {
 
       <Box width='50%' display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
         <Box display='flex' width='100%' flexDir='column' justifyContent='center' alignItems='center'>
-          <Text fontSize='24px' fontWeight='600'>Welcome!</Text>
-          <Text letterSpacing='1.2px'>Sign In To Your Account</Text>
+          <Text fontSize='30px' fontWeight='600'>Welcome!</Text>
+          <Text letterSpacing='1.2px' my='10px'>Sign In To Your Account</Text>
           <Box width='50%'>
 
           <InputGroup width='100%' display='flex' justifyContent='center' alignItems='center' my='20px'>
