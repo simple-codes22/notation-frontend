@@ -49,7 +49,7 @@ const Features = () => {
 
   
   return (
-    <Flex width='100%' justify='center' flexDirection='column' align='center'>
+    <Flex width='100%' justify='center' flexDirection='column' align='center' background="#2d2d2d" color="#e8ecf0" pb='100px'>
         <Box as='section' width='100%' maxW='1280px' display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
           <Text fontSize='50px' fontWeight={700} textAlign='center' mt='100px' mb='50px'>Our Amazing Features</Text>
           <Box display='flex' flexDirection='column'>
