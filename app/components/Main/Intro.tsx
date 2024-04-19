@@ -1,4 +1,4 @@
-import { Flex, Box, Heading, Text } from '@chakra-ui/react'
+import { Flex, Box, Text } from '@chakra-ui/react'
 import React from 'react';
 import Background from '../../../assets/Images/Illustrations/Intro illustration.png';
 import Image from 'next/image';

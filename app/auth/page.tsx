@@ -1,6 +1,6 @@
 'use client';
 import { Box, Flex, Input, Text, InputGroup, InputLeftElement, Button, Divider, AbsoluteCenter } from '@chakra-ui/react'
-import Image from 'next/image';
+// import Image from 'next/image';
 import React from 'react';
 import Illustration from './../../assets/Images/Illustrations/Auth Illustration.jpg';
 import { FaLock, FaUser, FaGithub, FaXTwitter } from 'react-icons/fa6';
