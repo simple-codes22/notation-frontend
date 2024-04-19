@@ -1,6 +1,6 @@
 import { Flex, Box, Text } from '@chakra-ui/react'
 import React from 'react';
-import Background from '../../../assets/Images/Illustrations/Intro illustration.png';
+import Background from '../../../assets/Images/Illustrations/Intro.png';
 import Image from 'next/image';
 
 const Intro = () => {
