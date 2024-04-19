@@ -8,7 +8,7 @@ import { FaXTwitter, FaDiscord, FaFacebook, FaGithub, FaLinkedin } from 'react-i
 
 const Footer = () => {
   return (
-    <Box width='100%' py='50px' display='flex' justifyContent='center' alignItems='center'>
+    <Box width='100%' py='100px' display='flex' justifyContent='center' alignItems='center'>
       <Box width='100%' maxW='1280px'>
         <Box display='flex' justifyContent='space-between' alignItems='center'>
 
