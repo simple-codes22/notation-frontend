@@ -88,7 +88,7 @@ export const Example = () => {
   const interval = setInterval(() => {paginate(1)}, 5000);
   clearInterval(interval);
 
-    paginate(1)
+    // paginate(1)
   }, [page])
 
 
