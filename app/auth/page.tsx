@@ -2,7 +2,7 @@
 import { Box, Flex, Input, Text, InputGroup, InputLeftElement, Button, Divider, AbsoluteCenter } from '@chakra-ui/react'
 // import Image from 'next/image';
 import React from 'react';
-import Illustration from './../../assets/Images/Illustrations/Auth Illustration.jpg';
+import Illustration from './../../assets/Images/Illustrations/Auth.jpg';
 import { FaLock, FaUser, FaGithub, FaXTwitter } from 'react-icons/fa6';
 import { FcGoogle } from "react-icons/fc";
 import { Link } from '@chakra-ui/next-js';
