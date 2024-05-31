@@ -50,7 +50,7 @@ const Features = () => {
   
   return (
     <Flex width='100%' justify='center' flexDirection='column' align='center' background="#2d2d2d" color="#e8ecf0" pb='100px'>
-        <Box as='section' width='100%' maxW='1280px' display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
+        <Box as='section' width='100%' px="10px" maxW='1280px' display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
           <Text fontSize='50px' fontWeight={700} textAlign='center' mt='100px' mb='50px'>Our Amazing Features</Text>
           <Box display='flex' flexDirection='column'>
             {mainFeatures.map((elem, index) => {
@@ -69,8 +69,8 @@ const Features = () => {
                 )
               } else if(elem.length == 2) {
                 return (
-                  <Box key={`${index}0`} display='flex'>
-                    <Box width='50%' my='20px' p='40px' background="#00000019" borderRadius='15px' mr='10px'>
+                  <Box key={`${index}0`} display='flex' flexDir={{base: 'column', md: 'row'}}>
+                    <Box width={{base: '100%', md:'50%'}} my='20px' p='40px' background="#00000019" borderRadius='15px' mr='10px'>
                       <Text py='20px' fontSize='30px' fontWeight='700'>
                           {elem[0].title}
                       </Text>
@@ -78,7 +78,7 @@ const Features = () => {
                           {elem[0].desc_}
                       </Text>
                     </Box>
-                    <Box width='50%' my='20px' p='40px' background="#00000019" borderRadius='15px' ml='10px'>
+                    <Box width={{base: '100%', md:'50%'}} my='20px' p='40px' background="#00000019" borderRadius='15px' ml='10px'>
                       <Text py='20px' fontSize='30px' fontWeight='700'>
                           {elem[1].title}
                       </Text>

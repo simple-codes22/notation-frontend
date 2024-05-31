@@ -4,6 +4,7 @@ import { Link } from '@chakra-ui/next-js';
 import Image from 'next/image';
 import React from 'react';
 import Logo from  '@/assets/Images/PNG/Notation normal tp.png';
+import { FaBars } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -13,6 +14,9 @@ const Header = () => {
             <Image src={Logo}  alt="Notation" />
           </Box>
 
+          <Box display={{base: 'block', md: 'none'}}>
+            <FaBars />
+          </Box>
           <Box display={{base: 'none', md:'flex'}} alignItems='center'>
             <Box px='20px' display='flex' justifyContent='center' alignItems='center'>
               <Link href="" pr='15px' _hover={{textDecoration:'none'}}>Home</Link>

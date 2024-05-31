@@ -168,7 +168,7 @@ const Testimonial = () => {
   ]
   return (
     <Flex as='section' width='100%' justify='center' align='center' py='100px'>
-        <Box width='100%' maxW='1280px'>
+        <Box width='100%' maxW='1280px' px="10px">
             <Box><Text textAlign='center' fontSize='50px' fontWeight={700} mt='50px'>Testimonial</Text></Box>
             <Flex width='100%'>
               <Flex width='100%' overflow='hidden' display='flex' justify='center' align='center' mt='30px'>
