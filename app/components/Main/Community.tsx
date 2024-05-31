@@ -10,7 +10,7 @@ const Community = () => {
               <Text fontSize='50px' fontWeight={700} textAlign='center' mb='50px'>Celebrate Your Achievements</Text>
             </Box>
             <Box>
-              <Text fontSize='30px'>Join our community of learners and educators to share your progress, ask questions, and engage with others who are passionate about math. Celebrate your achievements and inspire others to reach their full potential.</Text>
+              <Text fontSize={{base: '20px', md:'30px'}}>Join our community of learners and educators to share your progress, ask questions, and engage with others who are passionate about math. Celebrate your achievements and inspire others to reach their full potential.</Text>
             </Box>
         </Box>
     </Flex>
