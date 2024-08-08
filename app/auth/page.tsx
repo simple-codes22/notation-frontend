@@ -10,18 +10,18 @@ import { Link } from '@chakra-ui/next-js';
 const Page = () => {
   // console.log(Illustration)
   return (
-    <Flex justify='center' align='center' width='100%'>
-      <Box width='50%' display='flex' justifyContent='center' alignItems='center' minH='100vh' sx={{
+    <Flex justify='center' align='center' width='100%' minH='100vh'>
+      <Box width={{ base: '100%', md: '50%'}} position={{base: 'absolute', md: 'static'}} zIndex='-1' display='flex' justifyContent='center' alignItems='center' minH='100vh' sx={{
         background: `url('${Illustration.src}')`,
         backgroundSize: 'contain',
         backgroundPosition: 'center',
       }}>
       </Box>
 
-      <Box width='50%' display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
+      <Box width={{base: '70%',md: '50%'}}  background='white' display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
         <Box display='flex' width='100%' flexDir='column' justifyContent='center' alignItems='center'>
           <Text fontSize='30px' fontWeight='600'>Welcome!</Text>
-          <Text letterSpacing='1.2px' my='10px'>Sign In To Your Account</Text>
+          <Text letterSpacing='1.2px' my='10px' textAlign='center'>Sign In To Your Account</Text>
           <Box width='50%'>
 
           <InputGroup width='100%' display='flex' justifyContent='center' alignItems='center' my='20px'>
