@@ -13,21 +13,25 @@ const Header = () => {
   const mainUser = useContext(UserContext)
   const [logged, setLogged] = useState<Boolean>(false)
   useEffect(() => {
-    console.log("Here")
     const obtainUser = async () => {
       if (mainUser?.user) {
         setLogged(true)
       } else {
         const { data: { user } } = await NotationClient.auth.getUser()
         if (user) {
-          console.log(user);
-          // mainUser?.setUser(user)
-          setLogged(true)
+          if (user.identities)
+            mainUser?.setUser({
+              id: user.id,
+              email: user.email as string,
+              full_name: user.identities.length > 1 && user.identities[0].identity_data?.full_name
+            })
+            setLogged(true)
+          }
         }
       }
+      obtainUser();
     }
-    obtainUser();
-  }, [mainUser])
+  , [mainUser])
   return (
     <Flex py='20px' width='100%' justify='center' align='center'>
         <Box px='20px' width='100%' maxWidth='1280px' display='flex' alignItems='center' justifyContent='space-between'>
