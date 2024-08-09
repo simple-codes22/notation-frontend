@@ -6,9 +6,14 @@ import Illustration from './../../assets/Images/Illustrations/Auth.jpg';
 import { FaLock, FaUser, FaGithub, FaXTwitter } from 'react-icons/fa6';
 import { FcGoogle } from "react-icons/fc";
 import { Link } from '@chakra-ui/next-js';
+import { NotationClient } from '../context/supabaseClientSet';
+import { UserContext } from '../context/UserContext';
+import { useContext } from 'react';
 
 const Page = () => {
-  // console.log(Illustration)
+  // const { user, setUser } = useContext(UserContext)
+
+
   return (
     <Flex justify='center' align='center' width='100%' minH='100vh'>
       <Box width={{ base: '100%', md: '50%'}} position={{base: 'absolute', md: 'static'}} zIndex='-1' display='flex' justifyContent='center' alignItems='center' minH='100vh' sx={{
@@ -52,7 +57,12 @@ const Page = () => {
         </Box>
 
         <Box display="flex" width={{base: '70%', md:'40%'}} justifyContent='space-evenly'>
-          <Link href=""><FcGoogle size='40px' /></Link>
+          <Box cursor='pointer' onClick={async () => {
+            const response = await NotationClient.auth.signInWithOAuth({provider: 'google'})
+            console.log(response.data)
+
+            
+          }}><FcGoogle size='40px' /></Box>
           <Link href=""><FaGithub size='40px' /></Link>
           <Link href=""><FaXTwitter size='40px' /></Link>
         </Box>
