@@ -18,11 +18,11 @@ const Page = () => {
       }}>
       </Box>
 
-      <Box width={{base: '70%',md: '50%'}}  background='white' display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
+      <Box width={{base: '70%',md: '50%'}} py={{base: '30px', md: '0' }} borderRadius={{base: '5px', md: 0}} background='white' display='flex' flexDirection='column' justifyContent='center' alignItems='center' boxShadow={{base: "2px 1px 307px -30px rgba(0,0,0,0.56)", md: 'none'}}>
         <Box display='flex' width='100%' flexDir='column' justifyContent='center' alignItems='center'>
           <Text fontSize='30px' fontWeight='600'>Welcome!</Text>
           <Text letterSpacing='1.2px' my='10px' textAlign='center'>Sign In To Your Account</Text>
-          <Box width='50%'>
+          <Box width={{base: '80%', md: '50%'}}>
 
           <InputGroup width='100%' display='flex' justifyContent='center' alignItems='center' my='20px'>
             <InputLeftElement pointerEvents='none' display='flex' justifyContent='center' alignItems='center'>
@@ -44,14 +44,14 @@ const Page = () => {
           <Button>Sign In</Button>
         </Box>
 
-        <Box position='relative' width='70%' padding='10'>
+        <Box position='relative' width={{ base: '90%', md:'70%'}} padding='10'>
           <Divider color='black' background='#000' />
           <AbsoluteCenter background='white' px='4'>
             Or
           </AbsoluteCenter>
         </Box>
 
-        <Box display="flex" width='40%' justifyContent='space-evenly'>
+        <Box display="flex" width={{base: '70%', md:'40%'}} justifyContent='space-evenly'>
           <Link href=""><FcGoogle size='40px' /></Link>
           <Link href=""><FaGithub size='40px' /></Link>
           <Link href=""><FaXTwitter size='40px' /></Link>
