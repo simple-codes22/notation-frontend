@@ -51,7 +51,7 @@ const Header = () => {
           </Box>
           <Box display={{base: 'none', md:'flex'}} alignItems='center'>
             {logged ? 
-            <Button as={Link} href="/dashboard" variant='solid' background="#383838" color='white' _hover={{background: '#2d2d2de2'}}>
+            <Button as={Link} href="/dashboard" textDecor={'none'} variant='solid' background="#383838" color='white' _hover={{background: '#2d2d2de2'}}>
               Dashboard
             </Button> : 
             <Box>
