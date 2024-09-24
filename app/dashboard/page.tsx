@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { Box, Image, Avatar, Wrap, WrapItem, Button, Card, CardHeader, CardBody } from '@chakra-ui/react'
+import { Box, Image, Avatar, Wrap, WrapItem, Button, Card, CardHeader, CardBody, Text } from '@chakra-ui/react'
 import { FaTrophy, FaBrain, FaCheck, FaBookOpen,  } from 'react-icons/fa6'
 import { LuBrainCircuit } from 'react-icons/lu'
 import img from '@/assets/Images/PNG/Notation normal tp.png'
@@ -20,6 +20,7 @@ const Page = () => {
               {/* User Data (will be clickable to show a tool tip containing settings and the likes) */}
               <Avatar name='John Doe' size='sm' />
             </Box>
+            {/* Add a daily streak info */}
           </Box>
           {/* For the top section and navigation */}
         </Box>
@@ -108,14 +109,28 @@ const Page = () => {
 
 
 
-        <Box>
+        <Box w='100%'>
           {/* Next challenge section */}
+          <Box>
+            <Text>Next Level</Text>
+            <Text>Level Up</Text>
+          </Box>
+          <Box>
+            {/* New random unaanswered question */}
+            <Box>If 2x + 3 = 11, what is the value of x?</Box>
+            <Button>Solve Now</Button>
+          </Box>
         </Box>
 
 
 
-        <Box>
+        <Box w='100%'>
           {/* Create new questions */}
+          <Box>
+            <Text>Want to create your own questions?</Text>
+            <Button>Get started now!</Button>
+
+          </Box>
         </Box>
 
 
