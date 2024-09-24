@@ -14,10 +14,12 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@supabase/supabase-js": "^2.45.1",
+    "chart.js": "^4.4.4",
     "framer-motion": "^11.0.24",
-    "next": "14.1.4",
+    "next": "^14.2.13",
     "popmotion": "^11.0.5",
     "react": "^18",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
     "react-responsive-carousel": "^3.2.23"

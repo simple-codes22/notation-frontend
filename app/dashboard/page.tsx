@@ -1,8 +1,14 @@
+"use client"
 import React from 'react'
-import { Box, Image, Avatar, Wrap, WrapItem, Button } from '@chakra-ui/react'
+import { Box, Image, Avatar, Wrap, WrapItem, Button, Card, CardHeader, CardBody } from '@chakra-ui/react'
+import { FaTrophy, FaBrain, FaCheck, FaBookOpen,  } from 'react-icons/fa6'
+import { LuBrainCircuit } from 'react-icons/lu'
 import img from '@/assets/Images/PNG/Notation normal tp.png'
+import { Chart, CategoryScale, LinearScale, BarElement, } from 'chart.js'
+import { Bar } from 'react-chartjs-2'
 
 const Page = () => {
+  Chart.register(CategoryScale, LinearScale, BarElement)
   return (
     <Box background="rgb(232, 236, 240)" minH='100vh' color="#2d2d2d" w='100%' display='flex' justifyContent='center'>
       <Box w='100%' maxWidth='1280px' display='flex' flexDir='column' alignItems='center'>
@@ -26,7 +32,7 @@ const Page = () => {
             Welcome back, John Doe
           </Box>
           <Box>
-            Ready to conquer some math challenges? Let's see how far you've come!
+            Ready to conquer some math challenges? Let&apos;s see how far you&apos;ve come!
           </Box>
           <Box>
             <Button>Start a New Quiz</Button>
@@ -35,22 +41,91 @@ const Page = () => {
 
 
 
-        <Box>
+        <Box w='100%' display='grid' gridGap='4' gridTemplateColumns={{md: "repeat(2, minmax(0, 1fr));"}}>
           {/* For the main stats card */}
-          
+          <Card>
+                    <CardHeader display='flex' justifyContent='space-between' alignItems='center' pb='.5rem' >
+                      <Box fontSize='14px' lineHeight='20px' fontWeight='500'>Total Quizzes Completed</Box>
+                      <FaCheck height='16px' width='16px'  className="text-muted-foreground" />
+                    </CardHeader>
+                    <CardBody>
+                      <Box fontSize='24px' lineHeight='32px' fontWeight='700'>248</Box>
+                      <Box fontSize="12px" lineHeight="16px">+20% from last month</Box>
+                    </CardBody>
+          </Card>
+          <Card>
+                    <CardHeader display='flex' justifyContent='space-between' alignItems='center' pb='.5rem' >
+                      <Box fontSize='14px' lineHeight='20px' fontWeight='500'>Average Score</Box>
+                      <FaTrophy height='16px' width='16px'  className="text-muted-foreground" />
+                    </CardHeader>
+                    <CardBody>
+                      <Box fontSize='24px' lineHeight='32px' fontWeight='700'>89%</Box>
+                      <Box fontSize="12px" lineHeight="16px">+5% from last month</Box>
+                    </CardBody>
+          </Card>
+          <Card>
+                    <CardHeader display='flex' justifyContent='space-between' alignItems='center' pb='.5rem' >
+                      <Box fontSize='14px' lineHeight='20px' fontWeight='500'>Concepts Mastered</Box>
+                      <LuBrainCircuit height='16px' width='16px'  className="text-muted-foreground" />
+                    </CardHeader>
+                    <CardBody>
+                      <Box fontSize='24px' lineHeight='32px' fontWeight='700'>32</Box>
+                      <Box fontSize="12px" lineHeight="16px">+3 new this week</Box>
+                </CardBody>
+          </Card>
+            <Card>
+              <CardHeader display='flex' justifyContent='space-between' alignItems='center' pb='.5rem' >
+                <Box fontSize='14px' lineHeight='20px' fontWeight='500'>Study Streak</Box>
+                <FaBookOpen height='16px' width='16px'  className="text-muted-foreground" />
+              </CardHeader>
+              <CardBody>
+                <Box fontSize='24px' lineHeight='32px' fontWeight='700'>7 Days</Box>
+                <Box fontSize="12px" lineHeight="16px">Keep it up!</Box>
+              </CardBody>
+            </Card>
         </Box>
-        <Box>
+
+
+
+
+        <Box w='100%'>
           {/* For the progress and chart */}
+          <Box>Your Progress</Box>
+
+          <Box>
+            <Bar data={{
+              labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+              datasets: [
+                {
+                  label: 'Average Score',
+                  data: [80, 85, 90, 95],
+                }
+              ]
+            }} />
+          </Box>
         </Box>
+
+
+
+
         <Box>
           {/* Next challenge section */}
         </Box>
+
+
+
         <Box>
           {/* Create new questions */}
         </Box>
+
+
+
         <Box>
           {/* Overall Progress */}
         </Box>
+
+
+
       </Box>
     </Box>
   )
