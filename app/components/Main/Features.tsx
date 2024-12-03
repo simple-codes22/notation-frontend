@@ -10,9 +10,9 @@ import globe from './../../../assets/Lottie/globe 2.json';
 
 const introStyle = {
   type: 'spring',
-  damping: '21',
+  damping: '13',
   mass: '1',
-  stiffness: '74',
+  stiffness: '44',
 }
 
 const Features = () => {
