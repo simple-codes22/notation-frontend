@@ -4,13 +4,14 @@ import Background from '../../../assets/Images/Illustrations/Intro.png';
 import Image from 'next/image';
 import { Player } from '@lottiefiles/react-lottie-player';
 import intro from './../../../assets/Lottie/Math intro.json';
+import { motion } from 'framer-motion';
 
 const Intro = () => {
   return (
     <Flex width='100%' justify='center'>
         <Box width='100%' maxWidth='1280px' px="10px" display='flex' alignItems={{base: 'center', md: 'center'}} flexDirection={{base:'column', md: 'row'}} pt='0px' pb='100px' minH='720px'>
             {/* <Image src={Background} alt='Background' layout='fill' objectFit='cover' objectPosition='center'/> */}
-            <Box width={{base:"100%", md:'50%'}} display='flex' flexDirection='column' justifyContent='center'>
+            <Box as={motion.div} initial={{opacity: 0, x: -90}} animate={{opacity: 1, x: 0, transition: {type: "spring", damping: "21", mass: "1", stiffness: "74"}}} width={{base:"100%", md:'50%'}} display='flex' flexDirection='column' justifyContent='center'>
                 <Text fontSize={{base: '40px', md:'60px'}} fontWeight={700}>
                     Elevate Your Math Mastery: Dive Into Our Dynamic Quiz Universe
                 </Text>
